@@ -1,0 +1,30 @@
+ UmbrellaInfoCare
+ 
+ 1. How to create Policies in IAM. if u want to write policies
+ 2.How to create autoscaling group
+ 3.write script to copy one file from local to AWS s3 using folder hierarchy like year/month/date
+     aws s3 cp  "/root/index.html" s3://mybucket3445/$(date +%G)/$(date +%B)/$(date '+%y-%m-%d')/
+   
+ 4.On Jboss how to configure database connection
+ 5.how to take backup of database in SSMS--->Tasks > Back up...BACKUP DATABASE databasename TO DISK = 'filepath';
+ 6.how to attached drive in Linux and what are the steps.
+    --https://www.linuxtechi.com/create-add-ebs-volume-aws-instance/
+	   # lsblk
+	   # fdisk -l
+	   # file -s /dev/xvdf--The output /dev/xvdf: data shows that block volume is empty.
+	   # fdisk /dev/xvdf --Create partition
+	   # partprobe /dev/xvdf --update the kernel with these changes
+	   # mkfs /dev/xvdf -t ext4 --Formate the partition
+	   # mkdir /new_storage
+	   # mount /dev/xvdf  /new_storage
+	   # df -Th /new_storage
+	
+	
+ 7.How to take backup of Ec2 instances
+     --https://www.msp360.com/resources/blog/backup-aws-ec2-instance/
+ 8.what is custom metrix in clouwatch and how to create it.
+ 9.What are by deafult metrix available in Cloudwatch----CPU utilization, Network In/Out, Disk Reads/Write 
+    https://medium.com/@crishantha/creating-ec2-custom-metrics-on-aws-cloudwatch-b20c6169c8bf
+	https://asmed.com/amazon-aws-cloudwatch-custom-metrics-monitoring/
+ 10.What is Site to Site VPN and Remote access VPN
+ 11.Uploads logs from server to Cloudwatch logs
